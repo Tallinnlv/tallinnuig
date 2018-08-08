@@ -1,0 +1,48 @@
+{
+  "name": "tallinnuig",
+  "version": "1.0.3",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TWN",
+  "license": "ISC",
+  "devDependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/mandelbrot": "^1.2.0",
+    "@gotoandplay/cottonmouth": "^1.0.5",
+    "@gotoandplay/nighthawk": "^1.3.1",
+    "autoprefixer": "^8.6.5",
+    "guadalupe": "git+https://bitbucket.org/taurinikkari/guadalupe.git",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-header": "^2.0.5",
+    "gulp-if": "^2.0.2",
+    "gulp-imports": "0.0.3",
+    "gulp-postcss": "^7.0.1",
+    "gulp-remember": "^1.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^7.0.0",
+    "highlight.js": "^9.12.0",
+    "sass-graph": "^3.0.0",
+    "sass-mq": "^5.0.0",
+    "select2": "^4.0.6-rc.1",
+    "sidewinder": "git+https://github.com/risker/sidewinder.git",
+    "stylelint": "^9.3.0",
+    "yargs": "^11.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.1",
+    "bootstrap": "^4.1.2",
+    "normalize.css": "^8.0.0",
+    "popper.js": "^1.14.3",
+    "tippy.js": "^2.5.4"
+  }
+}
