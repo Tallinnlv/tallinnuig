@@ -1,5 +1,5 @@
-# tallinnuig
-tallinnuig
+# Tallinnuig
+Tallinnuig
 
  Lisainfo [SIIN](docs/index.md)
  
