@@ -1,0 +1,25 @@
+.Navigation {
+    display: inline-block;
+    min-width: 100%;
+}
+
+.Navigation-group {
+    @include clearfix;
+
+    & + & {
+        margin-top: 50px;
+    }
+}
+
+.navigation-search {
+    margin-right: -10px;
+    padding: 0 0 40px;
+}
+
+.navigation-logo {
+    padding-bottom: 40px;
+
+    svg {
+        overflow: inherit;
+    }
+}

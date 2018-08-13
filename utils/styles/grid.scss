@@ -1,0 +1,14 @@
+/** UIG styles
+ *  Used for the style guide and demo propose only
+**/
+
+.uig {
+    &-grid {
+        background-color: $black-2;
+    }
+
+    &-col {
+        background-color: $black-4;
+        min-height: 100px;
+    }
+}

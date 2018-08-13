@@ -1,0 +1,22 @@
+.Document {
+    padding: 40px;
+
+    @include mq($until: navCollapse) {
+        padding: 40px;
+    }
+}
+
+.Document-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    .Status {
+        margin-left: auto;
+    }
+}
+
+.Document-title {
+    @include font(title);
+    color: $blue;
+}

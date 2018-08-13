@@ -1,0 +1,65 @@
+.form-search {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        height: 40px;
+        box-sizing: inherit;
+        padding: 0 20px 0 20px;
+        border: none;
+        border-radius: 99em;
+        outline: none;
+        background-color: hsla(0,0%,100%,.3);
+        color: #0072ce;
+        font-size: 18px;
+        font-weight: 400;
+
+        &::placeholder {
+            opacity: 1;
+            //color: #0072ce;
+        }
+
+        &::-ms-clear {
+            display: none;
+        }
+    }
+
+    &__action {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 40px;
+        padding: 4px 15px 0 15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        .icon {
+            font-size: 16px;
+            vertical-align: top;
+            color: #0072ce;
+        }
+
+        &:hover,
+        &:focus {
+            color: $teal;
+        }
+    }
+
+    .form-textfield__icon--clear {
+        display: none;
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        font-size: 14px;
+        color: $black;
+
+        &:hover {
+            color: $teal;
+        }
+
+        &.is-visible {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+$colors-primary: ("blue":$blue, "white":$white, "gray":$gray, "black":$black, "green":$green, "red":$red, "yellow":$yellow);
+$colors-blue: ("blue-8":$blue-8, "blue-6":$blue-6, "blue-4":$blue-4, "blue-2":$blue-2);
+$colors-black: ("black-8":$black-8, "black-6":$black-6, "black-4":$black-4, "black-2":$black-2);
+$colors-green: ("green-8":$green-8, "green-6":$green-6, "green-4":$green-4, "green-2":$green-2);
+$colors-red: ("red-8":$red-8,  "red-6":$red-6,  "red-4":$red-4,  "red-2":$red-2);
+$colors-yellow: ("yellow-8":$yellow-8,  "yellow-6":$yellow-6,  "yellow-4":$yellow-4,  "yellow-2":$yellow-2);
+
+@mixin colors($colorList) {
+    @each $color, $value in $colorList {
+        &--#{$color} {
+            .uig-color__example {
+                background-color: $value;
+            }
+
+            .uig-color__text:after {
+                content: "#{$value}";
+            }
+        }
+    }
+}
+
+.uig-color {
+    border: 2px solid lighten($blue, 60%);
+    display: inline-block;
+    margin-right: 40px;
+    @include colors($colors-primary);
+    @include colors($colors-blue);
+    @include colors($colors-black);
+    @include colors($colors-green);
+    @include colors($colors-red);
+    @include colors($colors-yellow);
+}
+
+.uig-color__example {
+    width: 85px;
+    height: 85px;
+    box-shadow: 0 1px 4px 0 rgba(118, 118, 118, .5);
+}
+
+.uig-color__text {
+    &:after {
+        display: block;
+        text-transform: uppercase;
+        margin-top: .5em;
+    }
+}
