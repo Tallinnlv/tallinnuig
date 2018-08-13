@@ -1,6 +1,6 @@
 # tallinnuig
 tallinnuig
 
- Lisainfo [SIIN](index.md)
+ Lisainfo [SIIN](docs/index.md)
  
- Täpsemad arendus ja kasutusjuhendid asuvad [SIIN](arendajale.md)
+ Täpsemad arendus ja kasutusjuhendid asuvad [SIIN](docs/arendajale.md)
