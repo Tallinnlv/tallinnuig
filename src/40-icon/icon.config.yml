@@ -1,0 +1,13 @@
+label: Ikoonid
+context:
+  icon: info-circle
+  icons:
+    - ambulance
+    - chevron-right
+    - info-circle
+    - phone
+    - users
+    - newspaper
+    - map
+    - sitemap
+    - lock

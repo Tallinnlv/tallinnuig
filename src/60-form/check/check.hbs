@@ -1,0 +1,20 @@
+<div class="check-group {{modifiers}}">
+    <div class="check-group__text">{{title}}</div>
+    <div class="check-group__control">
+    {{#each options}}
+        <div class="check ">
+            <input type="checkbox" id="{{ ../name }}{{@index}}"{{#if checked }}
+                   checked="checked"{{/if}} value="{{this}}" class="check__input" name="{{ name }}">
+            <span class="check__indicator">
+                {{> @icon  icon="check" icon-modifiers="check__icon" }}
+            </span>
+            <label for="{{ ../name }}{{@index}}" class="check__label">
+                {{@key}}
+            </label>
+        </div>
+    {{/each}}
+
+    <div class="check-group__notice">{{helpText}}</div>
+    </div>
+</div>
+

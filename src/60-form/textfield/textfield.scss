@@ -1,0 +1,63 @@
+@import "../form";
+
+.textfield {
+    &--inline {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.textfield__label {
+    @extend %label;
+
+    .is-error & {
+        color: $red;
+    }
+
+    .textfield--inline & {
+        margin-right: 20px;
+        text-align: right;
+    }
+}
+
+.textfield__control {
+    .textfield--inline & {
+        flex-grow: 1;
+    }
+
+    &--tooltip {
+        padding-right: 60px;
+        position: relative;
+
+        [data-tooltip] {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.textfield__input {
+    //@include baseInput;
+    @extend %input;
+    @extend %placeholder;
+
+    .is-error & {
+        border-color: $red;
+    }
+
+    [class$=--small] & {
+        padding: $input-padding-small;
+    }
+
+}
+
+.textfield__notice {
+    @extend %notice;
+
+    .is-error & {
+        color: $red;
+    }
+}
+

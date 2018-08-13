@@ -1,0 +1,18 @@
+label: Rippmenüü
+collated: true
+display:
+  min-height: 250px
+context:
+  id: dropdown-menu
+  text: Menüü
+  menu:
+    - text: Menüüpelakiiri
+      link: https://www.tallinn.ee
+    - text: Teine menüü pealkiiri
+    - text: Menüüpelakiiri
+
+variants:
+  - name: open
+    label: Avatud
+    context:
+      dropdown-modifiers: is-active

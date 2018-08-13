@@ -1,0 +1,21 @@
+collated: true
+label: Text field
+context:
+  label: Input labels
+  id: testId1
+  placeholder: Write some value here!
+  helpText: See on kohustuslik väli!
+
+variants:
+  - name: Inline
+    context:
+      modifiers: textfield--inline
+  - name: error
+    context:
+      modifiers: is-error
+  - name: tooltip
+    display:
+      "min-height": 200px
+    context:
+      tooltip: true
+      helpText: false

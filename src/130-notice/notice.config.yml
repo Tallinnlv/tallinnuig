@@ -1,0 +1,28 @@
+label: Teavitused
+collated: true
+notes: Midagi on hästi
+context:
+  icon: check
+  text: The Earth is a very small stage in a vast cosmic arena.
+
+variants:
+  - name: default
+  - name: error
+    label: " "
+    notes: Midagi ei ole hästi
+    context:
+      notice-modifiers: notice--error
+  - name: info
+    label: " "
+    notes: Infoteavitus
+    context:
+      notice-modifiers: notice--info
+  - name: warning
+    label: " "
+    notes: Hoiatus
+    context:
+      notice-modifiers: notice--warning
+  - name: long
+    label: Pikem teavitus
+    context:
+      text: The dangers of not thinking clearly are much greater now than ever before. It's not that there's something new in our way of thinking - it's that credulous and confused thinking can be much more lethal in ways it was never before.

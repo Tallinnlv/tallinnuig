@@ -1,0 +1,54 @@
+$notice-icon-width: 85px;
+
+@mixin notice-variant ($main, $secondary, $icon: $main) {
+    border-color: $main;
+
+    &:before {
+        background-color: $secondary;
+    }
+
+    .notice__icon {
+        color: $icon;
+    }
+}
+
+.notice {
+    border: 1px solid $green;
+    border-radius: 4px;
+    position: relative;
+    padding: 18px 20px 18px (20px + $notice-icon-width);
+
+    &:before {
+        content: "";
+        width: $notice-icon-width;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $green-2;
+        display: block;
+        position: absolute;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    @include notice-variant($green, $green-2);
+
+    &--error {
+        @include notice-variant($red, $red-2);
+    }
+
+    &--info {
+        @include notice-variant($blue, $blue-2);
+    }
+
+    &--warning {
+        @include notice-variant($yellow, $yellow-2, $black-8);
+    }
+}
+
+.notice__icon {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    color: $green;
+}

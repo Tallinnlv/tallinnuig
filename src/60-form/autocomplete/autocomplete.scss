@@ -1,0 +1,95 @@
+@import "../form";
+
+.autocomplete {
+    display: flex;
+    align-items: flex-start;
+}
+
+.autocomplete__control {
+    position: relative;
+    margin-right: 20px;
+    flex: 1 auto;
+
+    .is-multiselect & {
+        @extend %input;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 57px;
+        width: 50%;
+    }
+}
+
+.autocomplete__input {
+    .autocomplete:not(.is-multiselect) & {
+        @extend %input;
+    }
+
+    @extend %placeholder;
+    padding-left: 57px !important;
+    text-overflow: ellipsis;
+
+    .is-multiselect & {
+        width: auto;
+        min-width: 100%;
+        padding-left: 5px !important;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border: $input-border;
+        border-radius: $input-border-radius;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+}
+
+.autocomplete__icon {
+    color: $input-color;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.autocomplete__button {
+    min-width: 100px;
+}
+
+.autocomplete__list {
+    @extend %input;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    position: absolute;
+    background: $white;
+    max-height: 300px;
+    overflow: auto;
+    display: none;
+    left: 0;
+
+    @at-root .is-results & {
+        display: block;
+    }
+
+    li + li {
+        margin-top: 1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $base-text-color;
+        display: block;
+        line-height: normal;
+
+        &:hover {
+            color: $blue;
+            font-weight: 600;
+        }
+    }
+}
+
+.autocomplete__multiselect {
+    display: none;
+    max-width: 100%;
+
+    .is-multiselect & {
+        display: inline-block;
+    }
+}

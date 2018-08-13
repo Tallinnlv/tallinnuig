@@ -1,0 +1,15 @@
+@mixin baseInput () {
+    padding: $input-padding;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    display: block;
+    width: 100%;
+}
+
+@mixin clearfix {
+    &::after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+}

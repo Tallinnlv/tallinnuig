@@ -1,0 +1,33 @@
+collated: true
+
+context:
+  foo: bar
+  placeholder: Otsi siit
+  results:
+    - Taavi Tamm
+    - Teresa García Ramírez marries Elí Arroyo López Francisco de Paula Juan Nepomuceno
+    - Timo Tikker
+    - Toomas Toomingas
+    - Tunne Tuuleveski
+    - Tõnu Tõniste
+
+variants:
+  - name: default
+  - name: search
+    label: Otsing
+    display:
+      "min-height": 350px
+    context:
+      modifiers: is-results
+  - name: selected
+    label: Valitud
+    context:
+      value: Teresa García Ramírez marries Elí Arroyo López Francisco de Paula Juan Nepomuceno
+  - name: multiselect
+    context:
+      modifiers: is-multiselect
+  - name: multiselect results
+    display:
+      "min-height": 450px
+    context:
+      modifiers: is-multiselect is-results

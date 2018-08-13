@@ -1,0 +1,37 @@
+<div class="wizard {{wizard-modifiers}}">
+    <ul class="wizard__steps">
+        {{#each steps }}
+            <li class="wizard__step {{#if (cond @index "==" ../active) }}is-active{{/if}}">
+                {{> @icon icon="check" icon-modifiers="wizard__icon"}}
+                {{this}}
+            </li>
+        {{/each}}
+    </ul>
+
+    <div class="wizard__content">
+        <div class="row {{#if center}}justify-content-md-center{{/if}}">
+            <div class="col-md-8">
+                <div class="wizard__item is-visible">
+                    <form class="form" action="">
+                    {{> @textfield label="Eesnimi" }}
+                    {{> @textfield label="Perenimi" }}
+                    </form>
+                </div>
+                <div class="wizard__item">
+                    other content
+                </div>
+                <div class="row">
+                    <div class="col">
+                        {{> @button content="Tagasi" icon-left="arrow-left" button-modifiers="button--triarity"}}
+                    </div>
+                    <div class="col-sm-auto">
+                        {{> @button content="Katkesta" button-modifiers="button--secondary" }}
+                    </div>
+                    <div class="col-sm-auto">
+                        {{> @button content="Salvesta ja jätka"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

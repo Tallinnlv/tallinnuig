@@ -1,0 +1,11 @@
+<div>
+{{#each colors }}
+    <!--<span style="float:left;">-->
+    <span style="display: inline-block">
+    {{#each this }}
+        {{#if break}}{{/if}}
+        {{> @uig-color name=this colorName=@key }}<br>
+    {{/each}}
+    </span>
+{{/each}}
+</div>

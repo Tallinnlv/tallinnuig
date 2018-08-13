@@ -1,0 +1,18 @@
+collated: true
+context:
+  label: checking
+  name: radioName
+  title: tee oma valik
+  helpText: Selle välja täitmine on kohustuslik.
+  options:
+    label1: value1
+    label2: value2
+
+variants:
+  - name: inline
+    context:
+      modifiers: radio-group--inline
+  - name: error
+    label: Valideerimine
+    context:
+      modifiers: is-error

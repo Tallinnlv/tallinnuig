@@ -1,0 +1,18 @@
+collated: true
+context:
+  label: checking
+  id: check1
+  name: checkName
+  title: tee oma valik
+  helpText: Selle välja täitmine on kohustuslik.
+  options:
+    label1: value1
+    label2: value2
+variants:
+  - name: inline
+    context:
+      modifiers: check-group--inline
+  - name: error
+    label: Valideerimine
+    context:
+      modifiers: is-error

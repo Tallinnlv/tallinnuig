@@ -1,0 +1,63 @@
+@import "../form";
+
+.select {
+    &--inline {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.select__label {
+    @extend %label;
+
+    .is-error & {
+        color: $red;
+    }
+
+    .select--inline & {
+        margin-right: 20px;
+        text-align: right;
+    }
+}
+
+.select__control {
+    position: relative;
+
+    &:after {
+        content: "";
+        border-style: solid;
+        border-color: $blue;
+        transform: rotate(45deg);
+        border-width: 0 1px 1px 0;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+.select__input {
+    @extend %input;
+    background-color: $white;
+    color: $black-8;
+    border-radius: $input-border-radius;
+    appearance: none;
+    padding: 19px 50px 19px 20px;
+
+    .is-error & {
+        border-color: $red;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.select__notice {
+    @extend %notice;
+
+    .is-error & {
+        color: $red;
+    }
+}

@@ -1,0 +1,89 @@
+$tip-arrow: 7px;
+$tip-border-color: $black-2;
+$tip-bg-color: $gray;
+
+[data-tooltip] {
+    display: inline-block;
+}
+
+.tippy-tooltip {
+    &.tallinn-theme {
+        background-color: $tip-bg-color;
+        color: $black-8;
+        border-radius: 4px;
+        border: 1px solid $tip-border-color;
+        padding: 20px;
+
+        .tippy-arrow {
+            @at-root {
+                .tippy-popper & {
+                    &:before {
+                        content: "";
+                        border: $tip-arrow solid transparent;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        //transform: translate(-$tip-arrow, -8.5px);
+                    }
+                }
+
+                .tippy-popper[x-placement^=top] & {
+                    border-top-color: $tip-border-color;
+
+                    &:before {
+                        border-width: $tip-arrow $tip-arrow 0 $tip-arrow;
+                        border-top-color: $tip-bg-color;
+                        transform: translate(-7px, -8.5px);
+                    }
+                }
+
+                .tippy-popper[x-placement^=bottom] & {
+                    border-bottom-color: $tip-border-color;
+
+                    &:before {
+                        border-width: 0 $tip-arrow $tip-arrow $tip-arrow;
+                        border-bottom-color: $tip-bg-color;
+                        transform: translate(-7px, 1.5px);
+                    }
+                }
+
+                .tippy-popper[x-placement^=right] & {
+                    border-right-color: $tip-border-color;
+
+                    &:before {
+                        border-width: $tip-arrow $tip-arrow $tip-arrow 0;
+                        border-right-color: $tip-bg-color;
+                        transform: translate(1.5px, -7px);
+                    }
+                }
+
+                .tippy-popper[x-placement^=left] & {
+                    border-left-color: $tip-border-color;
+
+                    &:before {
+                        border-width: $tip-arrow 0 $tip-arrow $tip-arrow;
+                        border-left-color: $tip-bg-color;
+                        transform: translate(-8.5px, -7px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tooltip__content {
+    display: none;
+    text-align: left;
+
+    & > *:first-child {
+        margin-top: 0;
+    }
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.tooltip__icon {
+    color: $blue;
+}

@@ -1,0 +1,31 @@
+%input {
+    padding: $input-padding;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    display: block;
+    width: 100%;
+    font-size: inherit;
+}
+
+%label {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+%placeholder {
+    &::placeholder {
+        color: $black-6;
+    }
+}
+
+%notice {
+    font-size: $type-h5;
+    color: $black-6;
+    margin-top: 10px;
+}
+
+.form {
+    > * + * {
+        margin-top: 60px;
+    }
+}

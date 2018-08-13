@@ -1,0 +1,11 @@
+.logo {
+    color: $blue;
+
+    svg {
+        fill: currentColor;
+    }
+
+    &--contrast {
+        color: $white;
+    }
+}

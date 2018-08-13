@@ -1,0 +1,109 @@
+@import "../form";
+
+$check-background: $white;
+$check-border: 1px solid $black-2;
+$check-indicator-color: $blue;
+$check-icon-position: 4px;
+$check-size: 30px;
+
+.check-group {
+    &--inline {
+        display: flex;
+    }
+}
+
+.check-group__text {
+    @extend %label;
+
+    .is-error & {
+        color: $red;
+    }
+
+    .check-group--inline & {
+        margin-right: 20px;
+        margin-bottom: 0;
+        text-align: right;
+        padding-top: 2px;
+    }
+}
+
+.check-group__notice {
+    @extend %notice;
+
+    .is-error & {
+        color: $red;
+    }
+
+    .check-group--inline & {
+        margin-top: 40px;
+    }
+}
+
+.check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    cursor: pointer;
+    text-align: left;
+
+    .check-group--inline & {
+        float: left;
+    }
+
+    .check__input:disabled ~ & {
+        cursor: default;
+    }
+
+    & + & {
+        margin-top: 20px;
+    }
+
+    .check-group--inline & + & {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+.check__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.check__label {
+    padding-left: $check-size + 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.check__indicator {
+    display: block;
+    width: $check-size;
+    height: $check-size;
+    border-radius: $input-border-radius;
+    background: $check-background;
+    border: $check-border;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $check-indicator-color;
+    padding: 4px;
+
+    .check__input:disabled ~ .check__label & {
+        opacity: .5;
+    }
+}
+
+.check__icon {
+    font-size: $type-h4 !important;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    color: $blue;
+
+    .check__input:checked + .check__indicator & {
+        opacity: 1;
+    }
+}

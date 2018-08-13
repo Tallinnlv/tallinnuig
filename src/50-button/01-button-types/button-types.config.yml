@@ -1,0 +1,23 @@
+label: Tüüp
+collated: true
+context:
+  content: Button
+variants:
+  - name: secondary
+    label: Sekundaarne
+    notes: " "
+    context:
+      button-modifiers: button--secondary
+  - name: triarity
+    label: Tertsiaarne
+    notes: " "
+    context:
+      button-modifiers: button--triarity
+  - name: contrast
+    label: Kontrastne
+    notes: "Kontrastne nupp on reserveeritud erijuhtudeks, kus tavaline primaarne nupp ei ole oma taustaga (N: fotod) võrreldes piisavalt kontrastne."
+    context:
+      button-modifiers: button--contrast
+  - name: icon
+    label: Nupud ikooniga
+    notes: " "

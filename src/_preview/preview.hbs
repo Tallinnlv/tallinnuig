@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{path '/assets/img/favicon.ico' }}">
+    {{#if _config.minify }}
+    <link media="all" rel="stylesheet" href="{{path '/assets/css/tallinn.min.css' }}">
+    <link media="all" rel="stylesheet" href="{{path '/assets/css/utils.min.css' }}">
+    {{else}}
+    <link media="all" rel="stylesheet" href="{{path '/assets/css/tallinn.css' }}">
+    <link media="all" rel="stylesheet" href="{{path '/assets/css/utils.css' }}">
+    {{/if}}
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
+
+    <title>:{{ _target.label }} | Preview Layout</title>
+</head>
+<body class="" style="
+    {{#each _target.display}}
+        {{@key}}: {{this}}
+    {{/each}}
+        ">
+{{ _target.display.wrapper}}
+<div class="main-wrapper">
+    {{{ yield }}}
+</div>
+
+<!--<script src="{{path '/assets/js/jquery.js' }}"></script>-->
+<!--<script src="{{path '/assets/js/bower-plugins.js' }}"></script>-->
+<script src="{{path '/assets/js/tallinn.js' }}"></script>
+<!--<script src="{{path '/assets/js/utils.js' }}"></script>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.contentWindow.min.js"></script>
+
+</body>
+</html>

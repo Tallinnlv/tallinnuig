@@ -1,0 +1,17 @@
+label: Tüpograafia
+collated: true
+variants:
+  - name: default
+    hidden: true
+  - name: type
+    notes: " "
+    label: Kirjatüüp ja variatsioonid
+  - name: headings
+    label: Pealkirjad
+    notes: " "
+  - name: lead
+    label: Sissejuhatused
+    notes: " "
+  - name: content
+    label: Sisutekst
+    notes: " "

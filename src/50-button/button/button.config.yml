@@ -1,0 +1,26 @@
+label: Suurus
+collated: true
+context:
+  content: Button
+
+variants:
+  - name: default
+    hidden: true
+  - name: large
+    label: Suur
+    notes: " "
+  - name: medium
+    label: Keskmine
+    notes: " "
+    context:
+      button-modifiers: button--medium
+  - name: small
+    label: Väike
+    notes: " "
+    context:
+      button-modifiers: button--small
+  - name: xsmall
+    label: Eriti väike
+    notes: " "
+    context:
+      button-modifiers: button--xsmall

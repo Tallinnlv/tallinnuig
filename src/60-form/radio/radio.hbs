@@ -1,0 +1,16 @@
+
+
+<div class="radio-group {{modifiers}}">
+    <div class="radio-group__text">{{title}}</div>
+    <div class="radio-group__control">
+        {{#each options}}
+            <label class="radio">
+                <input id="{{ ../name }}{{@index}}" type="radio" class="radio__input" name="{{ ../name }}" value="{{this}}">
+                <span class="radio__indicator"></span>
+                <span class="radio__label " for="{{ ../name }}{{@index}}">{{@key}}</span>
+            </label>
+        {{/each}}
+
+        <div class="radio-group__notice">{{helpText}}</div>
+    </div>
+</div>

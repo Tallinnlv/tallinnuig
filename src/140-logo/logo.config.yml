@@ -1,0 +1,11 @@
+collated: true
+variants:
+  - name: contrast
+    label: Kontrastne logo
+    display:
+      background-color: "#338ed8"
+      min-height: 100px
+    context:
+      logo-modifiers: logo--contrast
+  - name: systems
+    label: Logo koos süsteemi pealkirjaga

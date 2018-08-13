@@ -1,0 +1,15 @@
+collated: true
+label: Nuppude efektid
+tags:
+  - states
+  - effect
+variants:
+  - name: hover
+    context:
+      state: is-hover
+  - name: active
+    context:
+      state: is-active
+  - name: disabled
+    context:
+      state: is-disabled

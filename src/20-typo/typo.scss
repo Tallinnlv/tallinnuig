@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/LabGrotesque-Bold.woff2") format("woff2"), url("../fonts/LabGrotesque-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/LabGrotesque-BoldItalic.woff2") format("woff2"), url("../fonts/LabGrotesque-BoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/LabGrotesque-Italic.woff2") format("woff2"), url("../fonts/LabGrotesque-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/LabGrotesque-Regular.woff2") format("woff2"), url("../fonts/LabGrotesque-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+html {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $base-text-color;
+}
+
+h1,
+.type-h1 {
+    font-size: $type-h1;
+    line-height: 1.19;
+    font-weight: 400;
+}
+
+h2,
+.type-h2 {
+    font-size: $type-h2;
+    line-height: normal;
+    font-weight: 400;
+}
+
+h3,
+.type-h3 {
+    font-size: $type-h3;
+    line-height: 1.46;
+    font-weight: 400;
+}
+
+h4,
+.type-h4 {
+    font-size: $type-h4;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+h5,
+.type-h5 {
+    font-size: $type-h5;
+    line-height: 1.785;
+    font-weight: 400;
+}
+
+.text-lead {
+    font-size: $base-font-size; //$type-h3;
+    font-weight: 600;
+}
+
+i,
+.text-italic {
+    font-style: italic;
+}
+
+b,
+strong,
+.text-bold {
+    font-weight: 600;
+}
+
+.text-highlight {
+    color: $blue;
+}

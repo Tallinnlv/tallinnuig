@@ -1,0 +1,17 @@
+<div class="autocomplete {{modifiers}}">
+    <div class="autocomplete__control">
+        <div class="autocomplete__multiselect">
+        {{> @label text="Timo Tikker "}}
+        {{render "@label"}}
+        </div>
+
+        <input type="text" value="{{value}}" placeholder="{{placeholder}}" class="autocomplete__input">
+        {{> @icon icon="search" icon-modifiers="autocomplete__icon"}}
+        <ul class="autocomplete__list">
+            {{#each results}}
+                <li><a href="#">{{this}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+    {{> @button content="Otsi" button-modifiers="button--primary autocomplete__button"}}
+</div>

@@ -1,0 +1,41 @@
+.pagination {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.pagination__item {
+    background-color: $gray;
+
+    & + & {
+        margin-left: 20px;
+    }
+
+    a {
+        color: $black-8;
+        padding: 8px 20px;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &:first-child {
+        .pagination__icon {
+            margin-right: 10px;
+        }
+    }
+
+    &:last-child {
+        .pagination__icon {
+            margin-left: 10px;
+        }
+    }
+
+    .pagination__icon {
+        color: $blue;
+    }
+}

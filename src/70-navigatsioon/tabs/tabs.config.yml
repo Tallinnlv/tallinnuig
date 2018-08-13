@@ -1,0 +1,18 @@
+label: Tabs-menüü
+tag: tabs
+collated: true
+context:
+  tabs:
+    - Tab 1
+    - Tab 2
+    - Tab 3
+    - Erakordselt pika pealkirjaga tab
+    - Tab 5
+
+variants:
+  - name: vertical
+    label: Vertikaalne
+    display:
+      max-width: 300px;
+    context:
+      tab-modifier: tab--vertical

@@ -1,0 +1,48 @@
+collated: ture
+label: Päise menüü
+display:
+  min-height: 500px
+context:
+  menu:
+    - text: Menüü
+      icon: users
+      submenu:
+        - text: Menüü alamenüü
+          submenu:
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+        - text: Menüü pealkiri väga pika tekstiga
+        - text: Menüü alamenüü
+          submenu:
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü pealkiri
+            - text: Menüü alamenüü
+              submenu:
+                - text: Menüü pealkiri
+                - text: Menüü pealkiri
+    - text: Menüü
+      icon: info-circle
+      submenu:
+        - text: Menüü pealkiri
+      icon-modifiers: mainmenu__icon--hilight
+    - text: Kursor menüü kohal
+      icon: users
+variants:
+  - name: light
+    label: Hele
+    notes: Tumedal taustal
+    display:
+      background-color: grey
+    context:
+      mainmenu-modifiers: mainmenu--light

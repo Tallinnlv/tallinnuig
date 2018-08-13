@@ -1,0 +1,10 @@
+label: Vihjemullid
+collated: true
+display:
+  height: 400px;
+context:
+  tooltipText: Vihjemulli tekst
+variants:
+  - name: html
+    label: Pikad vihjed
+    notes: Pikad vihjed võimaldavad küll kuvada rohkem teksti, kuid siiski tuleks piirduda paari lausega. Nende eesmärk on anda kasutajale kiiret lisainfot kohtades, kuhu seda poleks muidu võimalik lisada.

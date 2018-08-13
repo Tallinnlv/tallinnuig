@@ -1,0 +1,20 @@
+<div class="textfield {{modifiers}}">
+    {{#if label}}
+        <label class="textfield__label" for="{{id}}">{{label}}</label>
+    {{/if}}
+    <div class="textfield__control {{#if tooltip}} textfield__control--tooltip{{/if}}">
+        <input class="textfield__input" id="{{id}}" placeholder="{{placeholder}}" type="text" value="{{value}}"/>
+        {{#if helpText}}
+            <div class="textfield__notice">{{helpText}}</div>
+        {{/if}}
+        {{#if tooltip}}
+            <span data-tooltip="right" title="information">
+                {{> @icon icon="info-circle" icon-modifiers="tooltip__icon" }}
+                <div class="tooltip__content">
+                    <p><b>Abiteksti pealkiri</b></p>
+                    <p>Kui abiteksti sisu laius ületab tekstivälja laiuse, võiks kasutada selle asemel vihjemulli.</p>
+                </div>
+            </span>
+        {{/if}}
+    </div>
+</div>

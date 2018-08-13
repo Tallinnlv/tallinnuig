@@ -1,0 +1,109 @@
+$button-font-size: 18px; //1rem;
+$button-height: 60px;
+$button-height-m: 50px;
+$button-height-s: 40px;
+$button-height-xs: 30px;
+
+$button-padding: 20px;
+$button-padding-m: 15px;
+$button-padding-s: 10px;
+$button-padding-xs: 7px;
+$button-border-radius: 4px;
+$button-hover-offset: 5px;
+
+$button-icon-padding: 5px;
+
+@mixin button($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin buttonSize($padding, $height) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    min-height: $height;
+
+    &:hover:not(.is-disabled):not([disabled]),
+    &.is-hover:not(.is-disabled):not([disabled]) {
+        padding-top: $padding - 4;
+        padding-bottom: $padding + 4;
+    }
+}
+
+.button {
+    position: relative;
+    font-size: $button-font-size;
+    line-height: 20px;
+    padding-left: $button-padding;
+    padding-right: $button-padding;
+    border-radius: $button-border-radius;
+    cursor: pointer;
+    vertical-align: top;
+    transition: padding 100ms ease;
+    border: none;
+    @include button($white, $blue);
+    @include buttonSize($button-padding, $button-height);
+
+    &:active,
+    &.is-active {
+        @extend :hover;
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .26);
+    }
+
+    &[disabled],
+    &.is-disabled {
+        &:not(.button--triarity) {
+            @include button($black-6, $black-2);
+        }
+    }
+
+    &--medium {
+        @include buttonSize($button-padding-m, $button-height-m);
+    }
+
+    &--small {
+        @include buttonSize($button-padding-s, $button-height-s);
+    }
+
+    &--xsmall {
+        @include buttonSize($button-padding-xs, $button-height-xs);
+    }
+
+    &--contrast {
+        @include button($black, $yellow);
+    }
+
+    &--secondary {
+        @include button($blue, $gray);
+    }
+
+    &--triarity {
+        @include button($blue, transparent);
+        padding-left: 0;
+        padding-right: 0;
+
+        &:active,
+        &.is-active {
+            @extend :hover;
+            box-shadow: none;
+        }
+
+        &[disabled],
+        &.is-disabled {
+            color: $black-6;
+        }
+    }
+}
+
+.button__icon {
+    //font-size: .8em;
+    line-height: normal;
+
+    &--left {
+        margin-right: $button-icon-padding;
+    }
+
+    &--right {
+        margin-left: $button-icon-padding;
+    }
+}

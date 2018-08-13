@@ -1,0 +1,9 @@
+label: Küljemenüü
+display:
+  max-width: 300px
+context:
+  title: Menüü pealkiri
+  items:
+    - Menüüpunkt
+    - Menüüpunkt
+    - Menüüpunkt

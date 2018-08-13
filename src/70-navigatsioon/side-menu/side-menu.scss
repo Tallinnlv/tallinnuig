@@ -1,0 +1,29 @@
+.side-menu {
+    background-color: $gray;
+    padding: 40px 20px;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 20px;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $black-8;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.side-menu__title {
+    color: $black;
+    margin-bottom: 40px;
+    font-weight: 600;
+}

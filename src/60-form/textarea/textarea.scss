@@ -1,0 +1,49 @@
+@import "../form";
+
+.textarea {
+    font-size: inherit;
+
+    &--inline {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.textarea__label {
+    @extend %label;
+
+    .is-error & {
+        color: $red;
+    }
+
+    .textarea--inline & {
+        margin-right: 20px;
+        text-align: right;
+    }
+}
+
+.textarea__control {
+    .textarea--inline & {
+        flex-grow: 1;
+    }
+}
+
+.textarea__input {
+    //@include baseInput;
+    @extend %input;
+    @extend %placeholder;
+    min-height: 200px;
+    font-family: $base-font-family;
+
+    .is-error & {
+        border-color: $red;
+    }
+}
+
+.textarea__notice {
+    @extend %notice;
+
+    .is-error & {
+        color: $red;
+    }
+}

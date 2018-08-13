@@ -1,0 +1,12 @@
+<div class="select {{modifiers}}">
+    <label class="select__label" for="{{id}}">{{label}}</label>
+    <div class="select__control">
+        <select class="select__input" name="{{name}}" id="">
+            <option class="select___placeholder" selected value="0">{{placeholder}}</option>
+            {{#each options}}
+                <option value="{{this}}">{{@key}}</option>
+            {{/each}}
+        </select>
+        <div class="select__notice">{{helpText}}</div>
+    </div>
+</div>

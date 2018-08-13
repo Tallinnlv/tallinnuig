@@ -1,0 +1,36 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.dropdown__menu {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: $gray;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: none;
+    z-index: 99;
+
+    .dropdown.is-active > &,
+    .dropdown:hover > & {
+        display: block;
+    }
+}
+
+.dropdown__item {
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: $black-8;
+
+    &:hover,
+    &.is-active {
+        color: $blue;
+    }
+}

@@ -1,0 +1,6 @@
+label: Nupud
+tags:
+  - button
+display:
+#  background: red
+  min-height: 70px

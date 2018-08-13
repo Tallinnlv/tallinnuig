@@ -1,0 +1,34 @@
+$bc-arrow: 1px solid $black-8;
+$bc-spaccing: 50px;
+
+.breadcrumbs {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    margin: 0;
+}
+
+.breadcrumbs__item {
+    color: $black-8;
+    font-size: $type-h5;
+
+    & + & {
+        padding-left: $bc-spaccing;
+
+        &:before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-top: $bc-arrow;
+            border-right: $bc-arrow;
+            transform: rotate(45deg);
+            left: $bc-spaccing / -2;
+            position: relative;
+        }
+    }
+
+    a {
+        color: $blue;
+    }
+}

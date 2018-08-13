@@ -1,0 +1,9 @@
+<button class="button {{button-modifiers}}" {{{attr}}}>
+    {{#if icon-left}}
+        {{> @icon icon=icon-left icon-modifiers="button__icon--left" attr-aria-hidden="true"}}
+    {{/if}}
+    {{content}}
+    {{#if icon-right}}
+        {{> @icon icon=icon-right icon-modifiers="button__icon--right" attr-aria-hidden="true"}}
+    {{/if}}
+</button>

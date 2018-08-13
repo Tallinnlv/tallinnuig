@@ -1,0 +1,25 @@
+.quote {
+    position: relative;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.quote__icon {
+    position: absolute;
+    left: 0;
+
+    &--end {
+        right: 0;
+        bottom: 55px;
+        transform: rotate(180deg);
+    }
+}
+
+.quote__content {
+    font-size: $type-h2;
+}
+
+.quote__autor {
+    font-size: $base-font-size;
+    color: $black-6;
+}

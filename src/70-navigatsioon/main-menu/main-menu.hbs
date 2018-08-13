@@ -1,0 +1,71 @@
+
+<nav data-menu="main">
+    <ul class="mainmenu {{mainmenu-modifiers}}">
+        {{#each menu}}
+            <li class="mainmenu__item">
+                <a href="#">
+                    {{> @icon icon-modifiers=(concat "mainmenu__icon" this.icon-modifiers) icon=this.icon}}
+                    {{this.text}}
+                    {{> @icon icon-modifiers="mainmenu__icon" icon="chevron-down"}}
+                </a>
+                {{#if this.submenu}}
+                    <div class="mainmenu__container">
+                        {{> submenu menu=this.submenu}}
+                    </div>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</nav>
+
+
+
+{{#*inline "submenu"}}
+    <ul class="mainmenu__sub {{class}}">
+        {{#each this.menu}}
+            <li class="mainmenu__item">
+                <a href="#">
+                    {{this.text}}
+                </a>
+                {{#if this.submenu}}
+                {{> submenu menu = this.submenu}}
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+{{/inline}}
+
+<!--
+
+<div class="megamenu">
+    <ul>
+        <li><a href="#">Menu level1</a></li>
+        <li><a href="#">Menu level1</a></li>
+        <li>
+            <a href="#">Menu level1</a>
+            <ul>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a></li>
+                <li><a href="#">LEvel 2</a>
+                    <ul>
+                        <li><a href="#">LEvel 3</a></li>
+                        <li><a href="#">LEvel 3</a></li>
+                        <li><a href="#">LEvel 3</a></li>
+                        <li><a href="#">LEvel 3</a></li>
+                        <li><a href="#">LEvel 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LEvel 2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Menu level1</a></li>
+        <li><a href="#">Menu level1</a></li>
+        <li><a href="#">Menu level1</a></li>
+    </ul>
+</div>-->

@@ -1,0 +1,9 @@
+tags:
+  - modal
+  - overlay
+display:
+  min-height: 500px
+label: Dialoogiaknad
+context:
+  title: Dialoogi nimetus
+  content: The dangers of not thinking clearly are much greater now than ever before. It's not that there's something new in our way of thinking - it's that credulous and confused thinking can be much more lethal in ways it was never before.

@@ -1,0 +1,8 @@
+label: Akordionid
+collated: true
+variants:
+  - name: nested
+    label: Mitmetasandilised akordionid
+    notes: Kui võimalik, siis tasuks vältida mitmetasandiliste akordionite kasutamist.
+    context:
+      nested: true

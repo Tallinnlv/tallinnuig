@@ -1,0 +1,11 @@
+<ul class="pagination">
+    <li class="pagination__item">
+        <a href="#">{{> @icon icon="chevron-left" icon-modifiers="pagination__icon"}}Eelmised</a>
+    </li>
+    {{#each items}}
+        <li class="pagination__item"><a href="#">{{this}}</a></li>
+    {{/each}}
+    <li class="pagination__item">
+        <a href="#">Järgmised{{> @icon icon="chevron-right" icon-modifiers="pagination__icon"}}</a>
+    </li>
+</ul>

@@ -1,0 +1,25 @@
+label: Tabelid
+collated: true
+context:
+  colums:
+    - Pealkiri
+    - Pealkiri
+    - Pealkiri
+    - Pealkiri
+  rows:
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+    - Sisutekst
+
+variants:
+  - name: border
+    label: Veergudega tabel
+    context:
+      modifiers: table--bordered
+  - name: input
+    label: Töödeldav tabel

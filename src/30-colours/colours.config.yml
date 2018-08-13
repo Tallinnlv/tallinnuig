@@ -1,0 +1,41 @@
+label: Värvid
+collated: true
+
+variants:
+  - name: default
+    hidden: true
+  - name: main
+    label: Põhivärvid
+    context:
+      colors:
+        blue: Tallinna Sinine
+        white: Valge
+        gray: Hall
+        black: Must
+        green: Roheline
+        red: Punane
+        yellow: Kollane
+  - name: shades
+    label: Värvide pooltoonid
+    context:
+      colors:
+        - blue-8: 80%
+          blue-6: 60%
+          blue-4: 40%
+          blue-2: 20%
+        - black-8: 80%
+          black-6: 60%
+          black-4: 40%
+          black-2: 20%
+        - green-8: 80%
+          green-6: 60%
+          green-4: 40%
+          green-2: 20%
+        - red-8: 80%
+          red-6: 60%
+          red-4: 40%
+          red-2: 20%
+        - yellow-8: 80%
+          yellow-6: 60%
+          yellow-4: 40%
+          yellow-2: 20%

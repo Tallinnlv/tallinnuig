@@ -1,0 +1,19 @@
+
+<div class="modal is-visible">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+        <div class="modal__header">
+            <p class="modal__title">{{title}}</p>
+                {{> @button content="Sulge" icon-left="times" button-modifiers="button--triarity button--xsmall modal__close"}}
+        </div>
+        <div class="modal__content">
+            {{{content}}}
+        </div>
+        <div class="modal__footer">
+            <div class="row justify-content-end">
+                <div class="col-auto">{{> @button content="Katkesta" button-modifiers="button--secondary"}}</div>
+                <div class="col-auto">{{> @button content="Salvesta"}}</div>
+            </div>
+        </div>
+    </div>
+</div>

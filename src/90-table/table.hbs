@@ -1,0 +1,18 @@
+<table class="table {{modifiers}}">
+    <thead>
+    <tr>
+        {{#each colums}}
+            <th>Pealkiri</th>
+        {{/each}}
+    </tr>
+    </thead>
+    <tbody>
+    {{#each rows}}
+        <tr>
+            {{#each ../colums}}
+                <td>Sisutekst</td>
+            {{/each}}
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

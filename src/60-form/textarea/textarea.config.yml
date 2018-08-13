@@ -1,0 +1,15 @@
+collated: true
+label: Text area
+context:
+  label: Pealkiri
+  id: textarera1
+  placeholder: Kirjuta midagi
+  helpText: See on vabatekstiväli
+
+variants:
+  - name: inline
+    context:
+      modifiers: textarea--inline
+  - name: error
+    context:
+      modifiers: is-error

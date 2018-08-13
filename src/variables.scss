@@ -1,0 +1,54 @@
+//colors
+
+//primary clours
+$blue: #0072ce;
+$white: #ffffff;
+$gray: #f5f5f5;
+$black: #000000;
+$green: #009639;
+$red: #ef3340;
+$yellow: #f3d03e;
+
+$blue-8: lighten(desaturate($blue, 32.1), 11.96);  //338ed8
+$blue-6: lighten(desaturate($blue, 31.87), 23.92); //#66aae2
+$blue-4: lighten(desaturate($blue, 32.79), 35.69); //#99c7eb
+$blue-2: lighten(desaturate($blue, 32.79), 47.65); //#cce3f5
+
+$black-8: lighten($black, 20); //#333333
+$black-6: lighten($black, 40); //#666666
+$black-4: lighten($black, 60); //#999999
+$black-2: lighten($black, 80); //#cccccc
+
+$green-8: lighten(desaturate($green, 45.95), 14.12); //#33ab61
+$green-6: lighten(desaturate($green, 58.33), 28.24); //#66c088
+$green-4: lighten(desaturate($green, 58.33), 42.35); //#99d5b0
+$green-2: lighten(desaturate(adjust-hue($green, -1), 58.33), 56.47); //#ccead7
+
+$red-8: lighten(desaturate($red, .23), 8.63); //#f25c66
+$red-6: lighten(desaturate($red, .61), 17.25); //#f5858c
+$red-4: lighten(saturate(adjust-hue($red, -1), .91), 25.88); //#f9adb3
+$red-2: lighten(saturate(adjust-hue($red, -1), .91), 34.51); //#fcd6d9
+
+$yellow-8: lighten(desaturate($yellow, .49), 8.04); //#f5d965
+$yellow-6: lighten(saturate($yellow, .33), 16.08); //#f8e38b
+$yellow-4: lighten(desaturate($yellow, .49), 24.12); //#faecb2
+$yellow-2: lighten(saturate($yellow, 1.95), 32.16); //#fdf6d8
+
+//Typograpy
+$base-font-family: "Lab Grotesque";
+$base-font-size: 18px !default;
+$base-line-height: 1.39;
+$base-text-color: $black-8;
+
+$type-h1: 3.5rem; //63px
+$type-h2: 1.833rem; //33px
+$type-h3: 1.33333rem; //24px
+$type-h4: 1.11111rem; //20px
+$type-h5: .77778rem; //14px
+
+//Forms
+$input-padding: 19px 20px;
+$input-padding-small: 9px 20px;
+$input-border: 1px solid $black-2;
+$input-border-radius: 4px;
+$input-color: $black-8;

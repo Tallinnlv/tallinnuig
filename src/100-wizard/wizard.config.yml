@@ -1,0 +1,19 @@
+label: Viisard
+display:
+  margin: 20px 0
+collated: true
+context:
+  steps:
+    - Sammu pealkiri
+    - Isikuandmed
+    - Sammu pealkiri
+    - Sammu pealkiri
+  active: "1"
+  center: true
+
+variants:
+  - name: vertical
+    label: Vertikaalne viisard
+    context:
+      wizard-modifiers: wizard--vertical
+      center: false

@@ -1,0 +1,15 @@
+<div class="dropdown {{dropdown-modifiers}}">
+    {{> @button content=text
+            icon-right="chevron-down"
+            button-modifiers="button--medium"
+            attr-aria-controls=id
+            attr-aria-haspopup="true"
+    }}
+    <div class="dropdown__menu" id="{{id}}" role="menu">
+        {{#each menu }}
+        <a href="{{default this.link "#"}}" class="dropdown__item {{this.item-modifiers}}">
+            {{this.text}}
+        </a>
+        {{/each}}
+    </div>
+</div>

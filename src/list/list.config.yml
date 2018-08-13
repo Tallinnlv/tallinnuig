@@ -1,0 +1,12 @@
+label: Loendid
+collated: true
+notes: Nummerdamata loend
+context:
+  type: ul
+variants:
+  - name: default
+  - name: orderd
+    label: Nummerdatud loend
+    notes: " "
+    context:
+      type: ol

@@ -1,0 +1,11 @@
+<ul class="breadcrumbs">
+    {{#each items}}
+        <li class="breadcrumbs__item">
+            {{#if this.link}}
+                <a href="#">{{this.text}}</a>
+            {{else}}
+                {{this.text}}
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>

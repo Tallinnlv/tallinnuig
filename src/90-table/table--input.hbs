@@ -1,0 +1,43 @@
+<table class="table table--bordered">
+    <thead>
+    <tr>
+        <th>Pealkiri</th>
+        <th>Pealkiri</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>
+            <div class="row">
+                <div class="col">
+                    {{> @textfield placeholder="Mart" modifiers="textfield--small" }}
+                </div>
+                <div class="col-auto">
+                    {{> @button content="Salvesta" button-modifiers="button--small"}}
+                </div>
+            </div>
+        </td>
+        <td>
+            {{> example text="Mart"}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{> example text="Maasikas"}}
+        </td>
+        <td> {{> example text="Maasikas"}}</td>
+    </tr>
+    </tbody>
+</table>
+
+{{#*inline "example"}}
+    <div class="row">
+        <div class="col">
+            {{> @textfield placeholder=text modifiers="textfield--small" }}
+        </div>
+        <div class="col-auto">
+            {{> @button content="Muuda" icon-left="edit" button-modifiers="button--small button--triarity"}}
+        </div>
+    </div>
+{{/inline}}

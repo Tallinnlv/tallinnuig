@@ -1,0 +1,7 @@
+<ul class="tab {{tab-modifier}}">
+    {{#each tabs}}
+        <li class="tab__item {{#if (cond @index "==" 2)}}is-selected{{/if}}">
+            <a href="#">{{this}}</a>
+        </li>
+    {{/each}}
+</ul>
