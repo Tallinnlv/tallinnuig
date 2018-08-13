@@ -12,4 +12,4 @@ Selle dokumendi loomisel lähtuti järgmistest punktides
     * Kui arenduse käigus tekivad uued komponendid siis need tuleb siia dokumenti lisada
     * Kui HTML/CSS-i täiendatakse siis need tuleb siia dokumenteerida
 
- Täpsemad arendus ja kasutusjuhendid asuvad [SIIN](docs/arendajale.html)
+ Täpsemad arendus ja kasutusjuhendid asuvad [SIIN](arendajale.html)
