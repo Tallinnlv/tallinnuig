@@ -96,7 +96,6 @@ fractal.web.set('builder.dest', __dirname + '/build');
 const projectTheme = theme(
     {
         "styles": [
-            "default",
             "/assets/css/tallinn.css",
             "/assets/css/theme.css",
             "/assets/css/utils.css"

@@ -6,10 +6,10 @@ context:
   id: dropdown-menu
   text: Menüü
   menu:
-    - text: Menüüpelakiiri
+    - text: Menüü pelakiiri
       link: https://www.tallinn.ee
     - text: Teine menüü pealkiiri
-    - text: Menüüpelakiiri
+    - text: Menüü pelakiiri
 
 variants:
   - name: open
